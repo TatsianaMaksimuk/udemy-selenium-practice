@@ -12,6 +12,8 @@ public class L05_LocatingByCSS {
 
         driver.manage().window().maximize();
         driver.get("https://www.automationtesting.co.uk/buttons.html");
-        driver.findElement(By.cssSelector("#btn_one")).click(); // # - id in css; . - class
+        driver.findElement(By.cssSelector("#btn_one")).click();
+        //alternative driver.findElement(By.cssSelector("button#btn_one")).click(); - element and id value
+        // # - id in css; . - class
      }
 }
